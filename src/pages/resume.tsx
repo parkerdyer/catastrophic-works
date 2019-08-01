@@ -7,8 +7,6 @@ import Img from 'gatsby-image';
 import * as React from 'react';
 import { css } from '@emotion/core';
 
-// import { PostFullHeader, PostFullTitle, NoImage, PostFull } from '../templates/post';
-import { PostFullContent } from '../components/PostContent';
 import Footer from '../components/Footer';
 import Helmet from 'react-helmet';
 
@@ -19,50 +17,51 @@ const PageTemplate = css`
   }
 `;
 
-const About: React.FC = () => (
-  <IndexLayout>
-    <Helmet>
-      <title>Resume</title>
-    </Helmet>
-    <Wrapper css={PageTemplate}>
-      <header css={[outer, SiteHeader]}>
-        <div css={inner}>
-          <SiteNav />
-        </div>
-      </header>
-      <main id="site-main" className="site-main" css={[SiteMain, outer]}>
-        <section>
-            <h1>L. Parker Dyer</h1>
-        </section>
-        {/* <article className="post page" css={[PostFull, NoImage]}>
-          <PostFullHeader>
-            <PostFullTitle>L. Parker Dyer</PostFullTitle>
-          </PostFullHeader>
+export interface AboutProps {
+  data: {
+    image: {
+      childImageSharp: {
+        fluid: any;
+      };
+    };
+  };
+}
 
-          <PostFullContent className="post-full-content">
-            <div className="post-content">
-              <p>Front-end developer.</p>
-              <p>Hi, I'm Parker.</p>
-              <Img fluid={data.fileName.childImageSharp.fluid} alt="" />
+const About: React.FC<AboutProps> = props => {
+    return (
+      <IndexLayout>
+        <Helmet>
+          <title>Resume</title>
+        </Helmet>
+        <Wrapper css={PageTemplate}>
+          <header css={[outer, SiteHeader]}>
+            <div css={inner}>
+              <SiteNav />
             </div>
-          </PostFullContent>
-        </article> */}
-      </main>
-      <Footer />
-    </Wrapper>
-  </IndexLayout>
-);
+          </header>
+          <main id="site-main" className="site-main" css={[SiteMain, outer]}>
+            <section>
+              <Img fluid={props.data.image.childImageSharp.fluid} alt="Parker's Resume" />
+            </section>
+          </main>
+          <Footer />
+        </Wrapper>
+      </IndexLayout>
+    );
+}
 
 export default About;
 
 export const query = graphql`
-  query {
-    fileName: file(relativePath: { eq: "img/parker_dyer_resume_web.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 400, maxHeight: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
+         query {
+           image: file(relativePath: { eq: "img/parker_dyer_resume_web.png" }) {
+             childImageSharp {
+               # Specify the image processing specifications right in the query.
+               # Makes it trivial to update as your page's design changes.
+               fluid(maxWidth: 2000) {
+                 ...GatsbyImageSharpFluid
+               }
+             }
+           }
+         }
+       `;

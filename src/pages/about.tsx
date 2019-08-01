@@ -32,20 +32,16 @@ const About: React.FC = () => (
       <main id="site-main" className="site-main" css={[SiteMain, outer]}>
         <article className="post page" css={[PostFull, NoImage]}>
           <PostFullHeader>
-            <PostFullTitle>About</PostFullTitle>
+            <PostFullTitle>About All the Things:</PostFullTitle>
           </PostFullHeader>
 
           <PostFullContent className="post-full-content">
             <div className="post-content">
-              <h3>About this site</h3>
-              <p>This site is built with Gatsby.</p>
-              <h3>About me</h3>
-              <p>Hi, I'm Parker.</p>
-              <p>Tech stack:</p>
-              <p>
-                Front-end developer. Crazy cat lady. Reading enthusiast. Drinker of wine and
-                bourbon.
-              </p>
+              <h5>About This Site</h5>
+              <p>This site is built with Gatsby. I use Netlify to deploy to production.</p>
+              <h5>About Me</h5>
+              <p>👋 Hi, I'm Parker.</p>
+              <p>💻 Front-end developer. Crazy 🐈 lady. 📚 enthusiast. Drinker of 🍷 and 🥃.</p>
               Check out my <Link to={`/resume/`}>resume</Link>.
             </div>
           </PostFullContent>
