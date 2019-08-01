@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'Ghost',
+    title: 'Catastrophic Works',
     description: 'The professional publishing platform',
     siteUrl: 'https://www.catastrophic.works', // full path to blog - no ending slash
   },

@@ -77,7 +77,7 @@ const NotFoundPage: React.FC<NotFoundTemplateProps> = props => {
               <ErrorCode>404</ErrorCode>
               <ErrorDescription>Page not found</ErrorDescription>
               <Link css={ErrorLink} to="">
-                Go to the front page →
+                Go to the home page →
               </Link>
             </section>
           </div>

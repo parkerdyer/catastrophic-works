@@ -87,7 +87,7 @@ const SubscribeForm: React.FC = () => {
     <form
       noValidate
       css={SubscribeFormStyles}
-      action={config.mailchimpAction}
+      // action={config.mailchimpAction}
       method="post"
       id="mc-embedded-subscribe-form"
       name="mc-embedded-subscribe-form"
@@ -98,13 +98,13 @@ const SubscribeForm: React.FC = () => {
         <SubscribeEmail
           className="subscribe-email"
           type="email"
-          name={config.mailchimpEmailFieldName}
-          id={config.mailchimpEmailFieldName}
+          // name={config.mailchimpEmailFieldName}
+          // id={config.mailchimpEmailFieldName}
           placeholder="youremail@example.com"
         />
       </FormGroup>
       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-        <input type="text" name={config.mailchimpName} tabIndex={-1} />
+        {/* <input type="text" name={config.mailchimpName} tabIndex={-1} /> */}
       </div>
       <SubscribeFormButton type="submit">
         <span>Subscribe</span>

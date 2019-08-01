@@ -96,12 +96,6 @@ interface AuthorTemplateProps {
       twitter?: string;
       facebook?: string;
       location?: string;
-      // eslint-disable-next-line @typescript-eslint/camelcase
-      profile_image?: {
-        childImageSharp: {
-          fluid: any;
-        };
-      };
       bio?: string;
       avatar: {
         childImageSharp: {
@@ -158,12 +152,6 @@ const Author: React.FC<AuthorTemplateProps> = props => {
         <header
           className="no-cover"
           css={[outer, SiteHeader]}
-          style={{
-            // eslint-disable-next-line @typescript-eslint/camelcase
-            backgroundImage: author.profile_image ?
-              `url(${author.profile_image.childImageSharp.fluid.src})` :
-              '',
-          }}
         >
           <div css={inner}>
             <SiteNav isHome={false} />
@@ -270,13 +258,6 @@ export const pageQuery = graphql`
       bio
       facebook
       location
-      profile_image {
-        childImageSharp {
-          fluid(maxWidth: 3720) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       avatar {
         childImageSharp {
           fluid(maxWidth: 200) {
