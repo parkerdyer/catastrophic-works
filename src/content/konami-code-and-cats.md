@@ -24,7 +24,7 @@ I hope you're as excited as I am to learn about Konami code. And cats!
 ![It's a cheat code!](img/konami-code/cheat-code.png)
 \
 
-Game developer Kazuhisa Hasimoto was a Konami employee working on the development of the Gradius arcade game in 1986. He didn't want to test every level every time, so he created a cheat code for himself for testing purposes only. But he forgot to remove the code before the game went to production. 
+Game developer Kazuhisa Hasimoto was a Konami employee working on the development of the Gradius arcade game in 1986. He didn't want to test every level every time something changed in a higher level, so he created a cheat code for himself for testing purposes only. But he forgot to remove the code before the game went to production. 
 
 ![White cat in front of white background](img/konami-code/lukasz-szmigiel-bz_AvHqpPIA-unsplash.jpg)
 
