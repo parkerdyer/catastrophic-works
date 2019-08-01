@@ -17,7 +17,7 @@ I've given a few lightning talks on this subject and figured I'd share it here. 
 
 I hope you're as excited as I am to learn about Konami code. And cats!
 
----
+
 ![What is Konami code?](img/konami-code/what-is-konami-code.png)
 
 

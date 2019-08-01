@@ -1,22 +1,8 @@
-# gatsby-casper
+# catastrophic works
 
-## Getting Started
-Clone this repo.
-
-```
-git clone https://github.com/scttcper/gatsby-casper.git --depth=1
-```
-
-Remove .git folder and setup a new one
-
-```
-rm -rf .git && git init
-```
 
 Edit website-config.ts with your website settings.
 Either disable subscribe or setup a mailchimp list and add the form action and hidden field input name.
-
-Now push to whatever repo you want!
 
 
 ### Progress
@@ -36,10 +22,6 @@ Now push to whatever repo you want!
   - [x] meta tags
   - [x] page titles
   - [x] pagination
-
-### Deploy to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/scttcper/gatsby-casper)
 
 ## How to configure Google Analytics
 Edit `gatsby-config.js` and add your tracking ID
@@ -64,17 +46,6 @@ Edit `gatsby-config.js` and add your tracking ID
       // Determines how often site speed tracking beacons will be sent
       siteSpeedSampleRate: 10,
     },
-  },
-```
-
-## How to edit your site title and description
-Edit `gatsby-config.js` section `siteMetadata`
-
-```javascript
- siteMetadata: {
-    title: 'My awesome site name',
-    description: 'This is a description for my site',
-    siteUrl: 'https://mysite.com', // full path to blog - no ending slash
   },
 ```
 
