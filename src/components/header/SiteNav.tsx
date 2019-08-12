@@ -8,7 +8,7 @@ import { SocialLink } from '../../styles/shared';
 import config from '../../website-config';
 import Facebook from '../icons/facebook';
 import Twitter from '../icons/twitter';
-import SubscribeModal from '../subscribe/SubscribeOverlay';
+// import SubscribeModal from '../subscribe/SubscribeOverlay';
 import SiteNavLogo from './SiteNavLogo';
 
 const HomeNavRaise = css`
@@ -117,13 +117,13 @@ interface SiteNavProps {
 }
 
 class SiteNav extends React.Component<SiteNavProps> {
-  subscribe = React.createRef<SubscribeModal>();
+  // subscribe = React.createRef<SubscribeModal>();
 
-  openModal = () => {
-    if (this.subscribe.current) {
-      this.subscribe.current.open();
-    }
-  };
+  // openModal = () => {
+  //   if (this.subscribe.current) {
+  //     this.subscribe.current.open();
+  //   }
+  // };
 
   render() {
     const { isHome = false } = this.props;
@@ -169,10 +169,10 @@ class SiteNav extends React.Component<SiteNavProps> {
               </a>
             )}
           </SocialLinks>
-          {config.showSubscribe && (
+          {/* {config.showSubscribe && (
             <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
           )}
-          {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
+          {config.showSubscribe && <SubscribeModal ref={this.subscribe} />} */}
         </SiteNavRight>
       </nav>
     );

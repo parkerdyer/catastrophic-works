@@ -2,7 +2,7 @@
 layout: post
 title: "How to finish a project"
 author: Parker
-tags: ["Getting Started", "Project Completion"]
+tags: ["Projects"]
 image: img/danielle-macinnes-IuLgi9PWETU-unsplash.jpg
 date: "2018-07-31T23:46:37.121Z"
 draft: false
