@@ -32,14 +32,14 @@ const About: React.FC = () => (
       <main id="site-main" className="site-main" css={[SiteMain, outer]}>
         <article className="post page" css={[PostFull, NoImage]}>
           <PostFullHeader>
-            <PostFullTitle>About All the Things:</PostFullTitle>
+            <PostFullTitle>About Me</PostFullTitle>
           </PostFullHeader>
 
           <PostFullContent className="post-full-content">
             <div className="post-content">
-              <h5>About This Site</h5>
-              <p>This site is built with Gatsby. I use Netlify to deploy to production.</p>
-              <h5>About Me</h5>
+              {/* <h5>About This Site</h5>
+              <p>This site is built with Gatsby. I use Netlify to deploy to production.</p> */}
+              {/* <h5>About Me</h5> */}
               <p>👋 Hi, I'm Parker.</p>
               <p>💻 Front-end developer. Crazy 🐈 lady. 📚 enthusiast. Drinker of 🍷 and 🥃.</p>
               Check out my <Link to={`/resume/`}>resume</Link>.

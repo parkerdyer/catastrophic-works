@@ -15,10 +15,6 @@ export interface WebsiteConfig {
   /**
    * full url, no username
    */
-  facebook?: string;
-  /**
-   * full url, no username
-   */
   twitter?: string;
   /**
    * hide or show all email subscribe boxes
@@ -27,15 +23,15 @@ export interface WebsiteConfig {
   /**
    * create a list on mailchimp and then create an embeddable signup form. this is the form action
    */
-  mailchimpAction?: string;
+  // mailchimpAction?: string;
   /**
    * this is the hidden input field name
    */
-  mailchimpName?: string;
+  // mailchimpName?: string;
   /**
    * name and id of the mailchimp email field
    */
-  mailchimpEmailFieldName?: string;
+  // mailchimpEmailFieldName?: string;
   /**
   /**
    * Meta tag for Google Webmaster Tools
@@ -55,7 +51,6 @@ const config: WebsiteConfig = {
   logo: 'img/catastrophic-works.png',
   lang: 'en',
   siteUrl: 'https://www.catastrophic.works',
-  facebook: 'https://www.facebook.com/lparkerdyer',
   twitter: 'https://twitter.com/keepcalmandcode',
   showSubscribe: true,
   googleSiteVerification: 'GoogleCode',
