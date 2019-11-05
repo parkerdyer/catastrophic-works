@@ -37,12 +37,12 @@ const About: React.FC = () => (
 
           <PostFullContent className="post-full-content">
             <div className="post-content">
-              {/* <h5>About This Site</h5>
-              <p>This site is built with Gatsby. I use Netlify to deploy to production.</p> */}
-              {/* <h5>About Me</h5> */}
-              <p>👋 Hi, I'm Parker.</p>
-              <p>💻 Front-end developer. Crazy 🐈 lady. 📚 enthusiast. Drinker of 🍷 and 🥃.</p>
-              Check out my <Link to={`/resume/`}>resume</Link>.
+              <p>Hello there! My name is Parker. I'm a front-end web developer and I'm currently having a love affair with interactive web experiences. I'd love to make it my life's work to create awesome user journeys. 💻</p>
+              <p>I currently reside in Columbus, Ohio with my dog and too many cats. 🐈 🐈 🐈 </p>
+              <p>When not squinting at a computer screen, I enjoy reading, writing, travel, and running/cycling.</p>
+              <p>Visit my main website <a href='https://parkerdyer.dev' target='_self'>here</a>, or check out my <Link to={`/resume/`}>resume</Link>.</p>
+              <h5>About This Site</h5>
+              <p>This site is built with Gatsby. I use Netlify to deploy to production.</p>
             </div>
           </PostFullContent>
         </article>

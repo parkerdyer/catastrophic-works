@@ -8,14 +8,14 @@ tags:
   - javascript
 ---
 
-I've given a few lightning talks on this subject and figured I'd share it here. The tiny kitten above has worked very hard on this presentation. Kudos to her.
+I've given a few lightning talks on this subject and figured I'd share it here.
 
 ---
 
 ![Konami Code and Cats](img/konami-code/konami-code.png)
 \
 
-I hope you're as excited as I am to learn about Konami code. And cats!
+You may be asking yourself, "What do cats have to do with Konami code?" The answer is: absolutely nothing. Enjoy!
 
 
 ![What is Konami code?](img/konami-code/what-is-konami-code.png)
@@ -29,7 +29,7 @@ Game developer Kazuhisa Hasimoto was a Konami employee working on the developmen
 ![White cat in front of white background](img/konami-code/lukasz-szmigiel-bz_AvHqpPIA-unsplash.jpg)
 
 
-<small><i>Like this cat, Konami code hides in the background. (Just kidding, this is a terrible analogy. I can see that cat very clearly. It's not even trying to hide.)</i></small>
+<small><i>Almost like this cat, Konami code hides in the background.</i></small>
 
 ---
 
