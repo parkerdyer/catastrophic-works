@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'Catastrophic Works',
-    description: 'The professional publishing platform',
+    description: 'A mostly technical blog maintained by Parker Dyer | parkerdyer.dev',
     siteUrl: 'https://www.catastrophic.works', // full path to blog - no ending slash
   },
   mapping: {
@@ -47,7 +47,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-casper.netlify.com',
+        siteUrl: 'https://catastrophic.works',
       },
     },
     'gatsby-plugin-emotion',
@@ -62,9 +62,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-XXXX-Y',
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'none',
         // Puts tracking script in the head instead of the body
         head: true,
         // IP anonymization for GDPR compliance
